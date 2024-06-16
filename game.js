@@ -49,6 +49,8 @@ const showWinner = (comChoice,userChoice,userWin) =>{
     //Now Accessing the msgWinner and Score Updation onFrontend
     if(userWin === null){
         console.log('Math Draw');
+        msg.textContent = `Match Draw !! you both choose ${userChoice}..Try again`
+        msg.style.backgroundColor = 'blue'
     }else{
         if(userWin === true){
             userScore++;
